@@ -1,36 +1,25 @@
 /* start font */
-import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=roboto');
 /* end font */
 
 /* start body */
 body {
     color: black;
     font-family: roboto, helvetica, arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5rem;
     margin: 0;
     padding: 0;
 }
-
-@meida only screen and (max-width: 600px) {
-    body {
-        font-size: 13px;
-    }
-
-    .menu-primer li {
-        border-right: 1px solid dimgray;
-        width: 100%;
-    }
-}
 /* end body */
 
 /* start debug */
-.bg-darkgrey {
-    background-color: darkgrey;
+.bg-black {
+    background-color: black;
 }
 
-.bg-black {
-    background-color: black ;
+.bg-dimgray {
+    background-color: dimgrey;
 }
 /* end debug */
 
@@ -63,68 +52,67 @@ a:visited {
 
 a:hover,
 a:active {
-    color: dimgray;
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
 }
 /* end anchor / hyperlink */
 
 /* start menu primer */
 .menu-primer ul {
-    background-color: darkgrey(217, 226, 228);
+    background-color: darkslategray;
     border-radius: 4px;
-    box-shadow: 
-        0 3px 5px -1px rgba(165, 165, 165, 0.2),
-        0 6px 10px 0 rgba(126, 125, 125, 0.14),
-        0 1px 18px 0 rgba(139, 139, 139, 0.12);
+    box-shadow: black;
 }
 
-.menu-primer li {
-    border-right: 1px solid dimgray;
+.menu-primer li{
+    border-right: 1px solid #d1d5da;
+    display: inline-block;
+    margin: 0 -4px;
 }
 
 .menu-primer a {
-    color: black;
+    color: white;
     font-size: 13px;
+    display: inline-block;
     letter-spacing: 1px;
     padding: 10px 20px;
     text-transform: uppercase;
 }
 
-.manu-primer a:hover {
-    background-color: darkgray;
+.menu-primer a:hover {
+    background-color: white;
     color: black;
     text-decoration: none;
 }
 
 .menu-primer .active {
-    background-color: black;
-    color: navy;
+    background-color: #ffffff;
+    color: #333333;
     text-decoration: none;
 }
 /* end menu primer */
 
-/* start heading */
+/* start hading */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
 h1 {
     font-size: 28px;
 }
-h2 {
+h1 {
     font-size: 24px;
 }
-h3 {
+h1 {
     font-size: 18px;
 }
-h4 {
+h1 {
     font-size: 16px;
 }
-h5 {
+h1 {
     font-size: 14px;
 }
-h6 {
+h1 {
     font-size: 13px;
 }
 /* end heading */
@@ -133,16 +121,17 @@ h6 {
 .jumbotron {
     background-color: #f6f8fa;
     border: 1px solid #eaecef;
-    border-radius: 4px;
-    padding: 10px 0;
+    border-radius; 4px;
+    padding: 2px 0;
 }
-.jumbotron h1{
-    font-size: 32px;
-    padding: 0 20px;
+
+.jumbotron h1 {
+    font-size: 26px;
+    padding: 0 15px;
 }
-.jumbotron h3{
-    font-size: 20px;
-    padding: 0 20px;
+.jumbotron h3 {
+    font-size: 15px;
+    padding: 0 15px;
 }
 /* end jumbotron */
 
@@ -193,7 +182,7 @@ h6 {
     background: dimgray;
     border-bottom: 1px solid rgb(211, 207, 207);
     overflow: auto;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 .menu-sekunder h4 {
     font-size: 14px;
